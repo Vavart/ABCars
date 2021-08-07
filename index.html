@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABCars</title>
+
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    </head>
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+        <div class="nav-brand-lang">
+            <a href="#" class="nav-brand">ABCars</a>
+
+            <div class="lang-menu">
+                <ul>
+
+                    <li>
+                        <img src="assets/drapeauUS.svg" alt="drapeau des etats unis">
+                        <span>EN</span>
+                    </li>
+
+                    <li>
+                        <img src="assets/drapeauFR.svg" alt="drapeau de la france">
+                        <span>FR</span>
+                    </li>
+
+                    <li>
+                        <img src="assets/drapeauES.svg" alt="drapeau de l'espagne">
+                        <span>ES</span>
+                    </li>
+
+                    <li>
+                        <img src="assets/drapeauCN.svg" alt="drapeau de la chine">
+                        <span>CN</span>
+                    </li>
+                </ul>
+
+                <img class="chevron" src="assets/chevronDown.svg" alt="chevron">
+                
+            </div>
+
+        </div>
+
+        <div class="nav-menu">
+            <a href="#" class="nav-links">Home</a>
+            <a href="#" class="nav-links active">Advantage Search</a>
+            <a href="#" class="nav-links">Shop New Cars</a>
+            <a href="#" class="nav-links">Reviews & Advice</a>
+            <a href="#" class="nav-links">What's My Car Worth ?</a>
+        </div>
+
+        <div class="nav-login-singup">
+            <button class="nav-login">
+                Login
+            </button>
+            <button class="nav-singup">
+                Sign Up
+            </button>
+        </div>
+    </nav>
+
+    <button class="nav-toggler">
+        <img src="assets/menu.svg" alt="menu hamburger">
+    </button>
+
+    <!-- Sous-navigation -->
+
+    <div class="sub-menu">
+        <div class="trois-liens">
+            <a href="#">Search</a>
+            <span>&#62;</span>
+            <a href="#">Mercedes</a>
+            <span>&#62;</span>
+            <a href="#" class="active">Vehicle Details</a>
+        </div>
+    </div>
+    
+    <!-- Contenu principal -->
+    <main>
+        <section class="principale">
+            <div class="slider">
+
+                <div class="slider-inner">
+                    <img class="img-slider-inner active-img" src="assets/1.jpg" data-pic="1">
+                    <img class="img-slider-inner" src="assets/2.png" data-pic="2">
+                    <img class="img-slider-inner" src="assets/3.jpg" data-pic="3">
+                    <img class="img-slider-inner" src="assets/4.jpg" data-pic="4">
+                    <img class="img-slider-inner" src="assets/5.jpg" data-pic="5">
+    
+                    <button type="button" class="prev" >
+                        <img src="assets/chevronLeft.svg" alt="chevron">
+                    </button>
+                    <button type="button" class="next">
+                        <img src="assets/chevronRight.svg" alt="chevron">
+                    </button>
+                </div>
+
+                <div class="vignettes">
+                    <img class="img-slider-vignette active-vignette" src="assets/1.jpg" data-pic="1">
+                    <img class="img-slider-vignette" src="assets/2.png" data-pic="2">
+                    <img class="img-slider-vignette" src="assets/3.jpg" data-pic="3">
+                    <img class="img-slider-vignette" src="assets/4.jpg" data-pic="4">
+                    <img class="img-slider-vignette" src="assets/5.jpg" data-pic="5">
+                </div>
+            </div>
+            
+            <div class="specifications">
+
+                <h3>Vehicle Specifications</h3>
+                <div class="vehicle-details">
+                    <div class="detail">
+                        <span>Design & cylinders</span>
+                        <span>Twin-turbochared boxer 6</span>
+                    </div>
+                    
+                    <div class="detail">
+                        <span>Acceleration</span>
+                        <span>3.5 sec</span>
+                    </div>
+                    
+                    <div class="detail">
+                        <span>Engine</span>
+                        <span>3.0L</span>
+                    </div>
+                    
+                    <div class="detail">
+                        <!-- Réf aux 3 "e" de speed sur la maquette -->
+                        <!-- FIDÉLITÉ !! -->
+                        <span>Top Speeed</span>
+                        <span>190 mph</span>
+                    </div>
+
+                    <div class="detail">
+                        <span>Width</span>
+                        <span>72.9 in</span>
+                    </div>
+                    
+                    <div class="detail">
+                        <span>Fuel tank</span>
+                        <span>17.6 gal</span>
+                    </div>
+
+                    <div class="detail">
+                        <span>Length</span>
+                        <span>177.9</span>
+                    </div>
+
+                    <div class="detail">
+                        <span>Dealers Location</span>
+                        <span>Torronto, Canada</span>
+                    </div>
+                </div>
+
+                <button class="show-more-btn" type="button">Show more</button>
+            </div>
+
+            <div class="contact">
+
+                <h3>Contact the Dealer</h3>
+
+                <form class="form-contact">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" value="John" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" value="Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="street">Street</label>
+                        <input type="text" id="street" value="Lorem Ipsum Street. 123" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" value="Lorem City" required>
+                    </div>
+
+                    <div class="form-group form-message">
+                        <label for="msg">Message</label>
+                        <textarea id="msg" placeholder="Enter your message" required></textarea>
+                    </div>
+
+                    <button type="submit">Send now</button>
+                </form>
+
+            </div>
+        </section>
+
+        <aside>
+            <div class="description">
+
+    
+                <h1>Mercedes-Benz C63 2017 <span>(290 Views)</span></h1>
+                <div class="tags">
+                    <span class="tag">Coupe</span>
+                    <span class="tag">New Vehicle</span>
+                    <span class="tag">Buy Now</span>
+                    <span class="tag">Brand Offer</span>
+                </div>
+
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt labore delectus quisquam. Incidunt, provident vel culpa inventore voluptate officiis quod asperiores animi nobis maxime eaque, impedit delectus ipsum, deserunt quasi dolore totam assumenda aspernatur est dignissimos! Nesciunt magni aliquam alias distinctio consectetur odit, asperiores doloremque nemo rem, optio necessitatibus commodi!</p>
+
+                <div class="cont-btns">
+                    <button class="price">$ 43,938.87</button>
+                    <button class="car-fax">Car Fax</button>
+                </div>
+            </div>
+
+            
+            <div class="company">
+                <img src="assets/logo-gnl.png" alt="logo gnl">
+                <div class="caption-logo">
+                    <span>Certifed Dealer</span>
+                    <span>⭐⭐⭐⭐⭐</span>
+                    <span>41 km in Oakville, ON</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolorum mollitia sint cumque illo, laboriosam pariatur laudantium labore ...</p>
+                <button class="show-more-btn">Show more</button>
+            </div>
+            
+            <div class="finance-calculator">
+                <h2>Purchase & Finance Calculator</h2>
+                <form class="form-finance-calc">
+                    <label for="carprice">Car Price</label>
+                    <input type="range" id="carprice" min="10000" max="300000" value= "151500" step="1">
+                    <input type="text" class="car-price-text" value="$151.500">
+                    
+                    <label for="downpayment">Down Payment</label>
+                    <input type="range" id="downpayment" min="10000" max="300000" value= "151500" step="1">
+                    <input type="text" class="down-payment-text" value="$151.500">
+                    
+                    <label for="loan">Loan Type</label>
+                    <input type="range" id="loan" min='1' max="10" step='1' value="5">
+                    <input type="number" class="loan-type-text" value="5">
+                    
+                    <button class="calc-finance">Calculate now</button>
+                </form>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Le message de confirmation -->
+    <div class="form-contact-confirm">
+        <p>Your message has successfully been sent ! </p>
+        <button>
+            <img src="assets/cross.svg" alt="croix pour quitter">
+        </button>
+    </div>
+
+    
+    <!-- Scripts -->
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/forms.js"></script>
+</body>
+</html>

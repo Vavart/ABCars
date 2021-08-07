@@ -1,0 +1,27 @@
+/****************** Submenu ******************/
+
+.sub-menu {
+    max-width: 1300px;
+    min-width: 300px;
+    margin: 100px auto 0;
+    padding: 0 15px;
+}
+.trois-liens a, .trois-liens span  {
+    text-decoration: none;
+    color: var(--grey);
+    margin: 0 5px;
+    font-size: 15px;
+}
+
+.trois-liens span {
+    font-weight: 900;
+}
+.trois-liens a.active {
+    color: var(--blue);
+}
+
+@media screen and (max-width: 1250px) {
+    .sub-menu {
+        margin: 20px auto 0;
+    }
+}

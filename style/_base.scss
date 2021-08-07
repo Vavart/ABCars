@@ -1,0 +1,35 @@
+body {
+    font-family: Lato, sans-serif;
+    background: #f1f1f1;
+    --grey: #98a0a6;
+    --blue: #249af2;
+    color: #333;
+    padding-bottom: 75px;
+}
+
+/****************** Grilles ******************/
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 25px;
+
+    max-width: 1300px;
+    // min-width: 300px;
+    margin: 20px auto 0;
+    padding: 0 15px;
+    
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+@media screen and (max-width: 1150px) {
+    main {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+}

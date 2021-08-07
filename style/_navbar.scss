@@ -1,0 +1,213 @@
+/****************** Navigation ******************/
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 30;
+
+    width: 100%;
+    height: 75px;
+    padding: 10px 35px;
+
+    background: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    transition: all 0.4s ease-in-out;
+}
+
+
+.nav--toggle-hiden-anim {
+    transform: translateX(100%);
+}
+
+
+.nav-brand-lang {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 20%;
+}
+
+.nav-brand {
+    font-size: 25px;
+    text-decoration: none;
+    color: #374453;
+    font-weight: 800;
+    margin-right: 25px;
+    letter-spacing: 1px;
+}
+
+.lang-menu {
+    display: flex;
+}
+
+.lang-menu ul {
+    border-left: 1px solid var(--grey);
+}
+
+.lang-menu ul li {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 5px 10px;
+    width: 125px;
+    cursor: pointer;
+}
+
+.lang-menu ul li:last-child {
+    cursor: pointer;
+    border-bottom-right-radius: 4px; 
+    border-bottom-left-radius: 4px; 
+}
+
+.lang-menu ul li:first-child {
+    position: relative;
+}
+.lang-menu ul li:not(:first-child) {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+}
+
+.lang-menu ul li.active {
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    margin-top: 10px;
+    pointer-events: all;
+}
+
+// De 2 à 4 car on veut les 3 enfants APRES le premier.
+// Si d'autres langues venaient à être créés
+
+@for $i from 2 through 4 {
+  
+    .lang-menu ul li:nth-of-type(#{$i}):not(.active) {
+        transform: translateY(-100%);
+    }
+    .lang-menu ul li.active:nth-of-type(#{$i}) {
+        transform: translateY(100% * ($i - 2));
+    }
+}
+
+.lang-menu ul li img {
+    margin-right: 10px;
+    width: 30px;
+}
+
+.lang-menu .chevron {
+    margin-right: 15px;
+    width: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.lang-menu .chevron.active {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-links {
+    position: relative;
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 15px;
+
+    margin: 0 15px;
+}
+
+.nav-links.active {
+    color: #000;
+}
+
+.nav-links.active.active::after {
+    content: "";
+    position: absolute;
+    display: block;
+
+    background: var(--blue);
+
+    width: 115%;
+    height: 4px;
+    border-radius: 9999px;
+    top: 42px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-login, .nav-singup {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.nav-singup {
+    background: var(--blue);
+    color: #fff;
+}
+
+.nav-toggler {
+    position: fixed;
+    z-index: 50;
+    top: 0px;
+    right: 0px;
+    background: white;
+    border: none;
+    outline: none;
+    padding: 10px 10px 10px 15px;
+    border-bottom-left-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: none;
+}
+.nav-toggler img {
+    width: 20px;
+}
+
+@media screen and (max-width: 1250px) {
+    nav {
+        position: fixed;
+        right: 0;
+        height: 100%;
+        width: 300px;
+        flex-direction: column;
+        transform: translateX(0%);
+    }
+
+    .nav-brand-lang {
+        margin-top: 50px;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        height: 50px;
+        line-height: 50px;
+        display: block;
+    }
+
+    .nav-links.active.active::after {
+        width: 3px;
+        height: 100%;
+        border-radius: 9999px;
+        top: 0px;
+        left: -72px;  
+    }
+
+    .nav-toggler {
+        display: block;
+    }
+}

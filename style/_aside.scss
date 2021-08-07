@@ -1,0 +1,157 @@
+/****************** Aside ******************/
+// Description
+
+.description {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+.description h1 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.description h1 span {
+    font-size: 15px;
+    color: var(--grey);
+    font-weight: normal;
+}
+
+.description .tags {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tags .tag {
+    padding: 7px 10px;
+    margin: 2px 5px;
+    border-radius: 4px;
+    background: #f3f4f6;
+    font-size: 13px;
+}
+
+.description h3 {
+    color: var(--blue);
+    font-weight: 700;
+    margin: 25px 0 10px 0;
+    font-size: 20px;
+}
+
+.description p {
+    color: var(--grey);
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.cont-btns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+
+.cont-btns .price, .cont-btns .car-fax {
+    @include btn;
+}
+
+.cont-btns .car-fax {
+    background: #16d762;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/****************** Aside ******************/
+// Company
+
+.company {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+.company img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+
+.company .caption-logo {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 9px;
+    
+}
+
+// Les étoiles
+.caption-logo :nth-child(2) {
+    margin: 7px 0;
+    font-size: 12px;
+}
+
+.company p {
+    color: var(--grey);
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 10px 0 20px ;
+}
+
+.company .show-more-btn {
+    @include btn;
+}
+
+/****************** Aside ******************/
+// Finance calculator
+
+
+.finance-calculator {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+.finance-calculator h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.finance-calculator form {
+    display: flex;
+    flex-direction: column;
+}
+
+.finance-calculator form label {
+    color: var(--grey);
+}
+.finance-calculator form label:not(:nth-child(1)) {
+    margin-top: 15px;
+}
+
+.finance-calculator form input[type=range] {
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.finance-calculator form input[type=text], 
+.finance-calculator form input[type=number] {
+    font-size: 16px;
+    padding: 10px 15px;
+    outline: none;
+    font-family: Lato, sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.finance-calculator form button {
+    @include btn;
+    background: #16d762;
+    color: #fff;
+    margin-top: 20px;
+}
+
+

@@ -1,0 +1,221 @@
+/****************** Section principale ******************/
+// Slider
+
+.principale {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-inner {
+    width: 100%;
+    height: clamp(250px, 50vw, 550px);
+    position: relative;
+}
+
+.slider-inner .img-slider-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-fit: unset;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slider-inner .active-img {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slider-inner button {
+    position: absolute;
+
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    border: none;
+    outline: none;
+    background: transparent;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    cursor: pointer;
+}
+
+.slider-inner button img {
+    width: 35px;
+
+}
+.slider-inner .next {
+    right: 10px;
+}
+.slider-inner .prev {
+    left: 10px;
+}
+
+.vignettes {
+
+    padding: 30px 0px;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.vignettes img {
+    width: 150px;
+    height: 100px;
+
+    margin: 10px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.vignettes .active-vignette {
+    border: 2px solid var(--blue);
+    transition: border 0.2s ease-in-out;
+}
+
+/****************** Section principale ******************/
+// Specifications
+
+.specifications {
+    padding: 10px 20px;
+}
+
+.specifications h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.vehicle-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(4, 60px);
+    width: 100%;
+    grid-column-gap: 25px;
+    margin-bottom: 20px;
+}
+
+.vehicle-details .detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(220, 14%, 86%);
+}
+
+.vehicle-details .detail span:nth-child(1) {
+    color: var(--grey);
+}
+
+.specifications button {
+    @include btn;
+}
+
+/****************** Section principale ******************/
+// Contact
+
+.contact {
+    padding: 10px 20px;
+}
+
+.contact h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    display: grid;
+    grid-template: 75px 75px 1fr / repeat(2, 1fr);
+    grid-gap: 15px;
+
+}
+.contact .form-group {
+    display: flex;
+    flex-direction: column;
+    color: var(--grey);
+}
+
+.contact .form-group input, .contact .form-group textarea  {
+    font-size: 16px;
+    padding: 10px 15px;
+    outline: none;
+    font-family: Lato, sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin: 10px 0;
+}
+.contact .form-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact form .form-message {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+}
+.contact form button {
+    grid-row: 4 / -1;
+    grid-column: 1 / -1;
+    @include btn;
+    background: #16d762;
+    color: #fff;
+}
+
+// Confirmation du formulaire d'envoi
+
+.form-contact-confirm {
+    position: fixed;
+    top: 0;
+    margin-top: 90px;
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #16d762;
+    color: #fff;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    transform: translateX(-100%);
+
+    transition: transform 0.4s ease-out;
+}
+
+.form-contact-confirm button {
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+}
+
+.form-contact-confirm button img {
+    width: 10px;
+}
