@@ -63,8 +63,8 @@ nav {
 }
 
 .nav--toggle-hiden-anim {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 .nav-brand-lang {
@@ -262,8 +262,8 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   .nav-brand-lang {
     margin-top: 50px;
@@ -362,8 +362,6 @@ nav {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-fit: unset;
-     object-fit: unset;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   opacity: 0;
