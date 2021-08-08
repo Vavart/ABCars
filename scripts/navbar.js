@@ -20,7 +20,6 @@ dropDownBtnDrapeau.addEventListener("click", () => {
 // Navigation : responsive menu 
 const nav = document.querySelector("nav");
 const navToggler = document.querySelector(".nav-toggler");
-let isShown = true;
 
 navToggler.addEventListener("click", () => {
 
