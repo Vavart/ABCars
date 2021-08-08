@@ -22,7 +22,7 @@ nav {
 
 
 .nav--toggle-hiden-anim {
-    transform: translateX(100%);
+    transform: translateX(0%);
 }
 
 
@@ -180,7 +180,7 @@ nav {
         height: 100%;
         width: 300px;
         flex-direction: column;
-        transform: translateX(0%);
+        transform: translateX(100%);
     }
 
     .nav-brand-lang {
