@@ -1,4 +1,4 @@
-# ABCars challenge (Website mock-up development) !
+# ABCars challenge (website mock-up development) !
 
 Challenge #24 from "Le Repaire du Web" discord. <br>
 
