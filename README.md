@@ -1,5 +1,5 @@
-# Défi d'intégration : ABCars!
+# ABCars challenge (Website mock-up development) !
 
-Nouveau défi du Repaire du Web, ici l'intégration d'une maquette web !
+Challenge #24 from "Le Repaire du Web" discord. <br>
 
---> Dispo [ici](https://vavart.github.io/ABCars/) !
+--> Available [here](https://vavart.github.io/ABCars/) !
